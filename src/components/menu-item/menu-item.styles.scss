@@ -1,16 +1,4 @@
-.homepage{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 80px;
-}
 
-.directory-menu {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
 .menu-item{
     min-width: 30%;
@@ -20,6 +8,14 @@
     align-items: center;
     justify-content: center;
     border: 1px solid black;
+    margin: 0 7.5px 15px;
+    background-position: center;
+    background-size: cover;
+
+    &.large{
+        height: 380px
+    }
+
     // &  => class that is above it and append it
     // .menuitem:first-child
 
