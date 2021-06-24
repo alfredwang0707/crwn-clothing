@@ -10,11 +10,12 @@ const config =  {
     messagingSenderId: "1024324791855",
     appId: "1:1024324791855:web:e8e18355681526d75220da",
     measurementId: "G-FPCTMT6RFT"
-  }
-  firebase.initializeApp(config)
+}
+
+firebase.initializeApp(config)
 
 
-  export const createUserProfileDocument = async(userAuth, additionalData) => {
+export const createUserProfileDocument = async(userAuth, additionalData) => {
     if (!userAuth) return
 
     const userRef = firestore.doc(`users/${userAuth.uid}`)
@@ -48,7 +49,7 @@ const config =  {
   export const firestore = firebase.firestore()
 
   const provider = new firebase.auth.GoogleAuthProvider()
-  provider.setCustomParameters({prompt: 'select_account'})
+provider.setCustomParameters({prompt: 'select_account'})
   export const signInWithGoogle = () => auth.signInWithPopup(provider)
 
 
