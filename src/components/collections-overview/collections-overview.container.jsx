@@ -8,7 +8,6 @@ import WithSpinner from '../with-spinner/with-spinner.component'
 import CollectionsOverview from './collections-overview.component'
 
 import {compose} from 'redux'
-import collectionsOverviewComponent from './collections-overview.component'
 
 const mapStateToProps = createStructuredSelector({
     isLoading: selectIsCollectionFetching
@@ -19,4 +18,4 @@ const CollectionsOverViewContainer = compose(
     WithSpinner
     )(CollectionsOverview)
 
-export default collectionsOverviewComponent
+export default CollectionsOverViewContainer
